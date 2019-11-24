@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABOUT BUFFALO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="testimonial-section">
+      <div class="">
+        <h1>buffalo welcomes you </h1>
+        <div class="testimonial-pics">
+          <img src="img/my.jpg" alt="test-1" class="active">
+          <img src="img/sanjeev1.jpeg" alt="test-2">
+          <img src="img/mamu.jpg" alt="test-3">
+          <img src="img/MAUSI.JPg" alt="test-4">
+        </div>
+
+        <div class="testimonial-contents">
+          <div class="testimonial active" id="test-1">
+            <p>AJAY YADAV</br>Madhav instue of technology,since 1960</br>B.tech ELECTRONICS AND TELECOMMUNICATION</BR>PROGAMMER AND DEVELOPER </p>
+            <span class="description"> FOUNDER OF buffalo </span><p></P>
+            <span class="description">aju9617@gmail.com</span>
+          </div>
+
+          <div class="testimonial" id="test-2">
+            <p>SANJEEV YADAV</br>East point college,banglore</br>BBA,2nd year</br></p>
+            <span class="description">CO. FOUNDER OF BUFFALO</span>
+          </div>
+
+          <div class="testimonial" id="test-3">
+            <p>JITENDRA YADAV</br>Master of Business Administration.</br>MAHARAJA RANJITSINGH COLLEGE,INDORE</br>INSTRUCTOR and SUPERVISOR</br> </p>
+            <span class="description">INSTRUCTOR</span>
+          </div>
+
+          <div class="testimonial" id="test-4">
+            <p>SUNITA YADAV</br> BACHELOR OF SCIENCE </br> MASTER OF SCIENCE<br/>working as surgeion BHU, VARANASHI</br>FUND MANAGER </p>
+            <span class="description">FUND MANAGER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $('.testimonial-pics img').click(function(){
+        $(".testimonial-pics img").removeClass("active");
+        $(this).addClass("active");
+
+        $(".testimonial").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+      });
+    </script>
+
+  </body>
+</html>
